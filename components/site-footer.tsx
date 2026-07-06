@@ -27,7 +27,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
           <Image
-            src="/fundy-launch-logo.png"
+            src="/headerlogo.png"
             alt="Fundy Launch"
             width={180}
             height={180}
