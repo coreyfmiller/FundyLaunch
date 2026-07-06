@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Process", href: "#process" },
   { label: "Growth Program", href: "#growth" },
   { label: "Industries", href: "#industries" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function SiteHeader() {
