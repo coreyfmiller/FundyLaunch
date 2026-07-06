@@ -21,7 +21,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 md:h-24 md:px-6">
         <a href="#top" className="flex items-center gap-2" aria-label="Fundy Launch home">
           <Image
-            src="/fundy-launch-header-logo.png"
+            src="/logo.png"
             alt="Fundy Launch — Web Design and Marketing"
             width={800}
             height={218}
