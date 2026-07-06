@@ -25,7 +25,7 @@ export function SiteHeader() {
             alt="Fundy Launch — Web Design and Marketing"
             width={800}
             height={218}
-            className="h-14 w-auto md:h-20"
+            className="h-10 w-auto md:h-15"
             priority
           />
         </a>
@@ -43,12 +43,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="tel:+19025550123"
-            className="text-sm font-semibold text-foreground transition-colors hover:text-accent"
-          >
-            (902) 555-0123
-          </a>
           <CtaLink href="#audit">Free Audit</CtaLink>
         </div>
 
