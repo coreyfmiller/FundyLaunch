@@ -26,7 +26,7 @@ export function SiteHeader() {
             alt="Fundy Launch — Web Design and Marketing"
             width={800}
             height={218}
-            className="h-10 w-auto md:h-15"
+            className="h-[46px] w-auto md:h-[69px]"
             priority
           />
         </a>

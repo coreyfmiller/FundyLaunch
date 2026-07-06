@@ -81,7 +81,11 @@ export function SiteFooter() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm text-muted-foreground md:flex-row md:px-6">
           <p>&copy; {new Date().getFullYear()} Fundy Launch. All rights reserved.</p>
-          <p>Web Design &amp; Marketing · Atlantic Canada</p>
+          <div className="flex gap-4">
+            <a href="/privacy" className="transition-colors hover:text-accent">Privacy Policy</a>
+            <span>·</span>
+            <a href="/privacy#terms" className="transition-colors hover:text-accent">Terms</a>
+          </div>
         </div>
       </div>
     </footer>

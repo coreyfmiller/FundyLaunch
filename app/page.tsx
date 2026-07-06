@@ -6,6 +6,7 @@ import { AiOptimization } from "@/components/ai-optimization"
 import { Process } from "@/components/process"
 import { GrowthProgram } from "@/components/growth-program"
 import { Industries } from "@/components/industries"
+import { Faq } from "@/components/faq"
 import { AuditCta } from "@/components/audit-cta"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -21,6 +22,7 @@ export default function Page() {
         <Process />
         <GrowthProgram />
         <Industries />
+        <Faq />
         <AuditCta />
       </main>
       <SiteFooter />
