@@ -89,14 +89,14 @@ export default function PackagesPage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`flex flex-col rounded-2xl border p-6 md:p-8 ${
+                className={`relative flex flex-col rounded-2xl border p-6 md:p-8 ${
                   pkg.highlighted
                     ? "border-accent/50 bg-accent/5 shadow-lg shadow-accent/10"
                     : "border-border bg-card"
                 }`}
               >
                 {pkg.highlighted && (
-                  <span className="mb-4 inline-flex w-fit items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-accent px-4 py-1 text-xs font-semibold text-accent-foreground">
                     Most popular
                   </span>
                 )}
