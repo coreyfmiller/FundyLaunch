@@ -32,7 +32,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <CtaLink href="#audit" size="lg">
+            <CtaLink href="/contact" size="lg">
               Get Your Free Website &amp; SEO Audit
               <ArrowRight />
             </CtaLink>

@@ -43,7 +43,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <CtaLink href="#audit">Free Audit</CtaLink>
+          <CtaLink href="/contact">Free Audit</CtaLink>
         </div>
 
         <button
@@ -70,7 +70,7 @@ export function SiteHeader() {
                 {link.label}
               </a>
             ))}
-            <CtaLink href="#audit" onClick={() => setOpen(false)} className="mt-3">
+            <CtaLink href="/contact" onClick={() => setOpen(false)} className="mt-3">
               Get Your Free Audit
             </CtaLink>
           </nav>
