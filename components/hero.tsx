@@ -57,8 +57,8 @@ export function Hero() {
         <div className="relative">
           <div className="relative flex items-center justify-center rounded-3xl bg-secondary p-8 md:p-12">
             <Image
-              src="/fundy-launch-icon.png"
-              alt="Fundy Launch rocket logo"
+              src="/hero-dashboard2.png"
+              alt="Local search rankings dashboard"
               width={720}
               height={720}
               className="h-auto w-full max-w-md drop-shadow-xl"
