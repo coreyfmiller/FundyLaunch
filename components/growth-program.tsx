@@ -19,7 +19,7 @@ export function GrowthProgram() {
         <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
           <div className="grid lg:grid-cols-2">
             <div className="bg-primary p-8 text-primary-foreground md:p-12">
-              <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
+              <span className="inline-flex items-center rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-accent-foreground">
                 Recurring growth, not one-off projects
               </span>
               <h2 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
