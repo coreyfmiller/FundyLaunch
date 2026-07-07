@@ -20,7 +20,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 md:h-24 md:px-6">
-        <a href="#top" className="flex items-center gap-2" aria-label="Fundy Launch home">
+        <a href="/" className="flex items-center gap-2" aria-label="Fundy Launch home">
           <Image
             src="/headerlogo.png"
             alt="Fundy Launch — Web Design and Marketing"
