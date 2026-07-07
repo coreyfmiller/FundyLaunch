@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en" className={`bg-background ${inter.variable} ${jakarta.variable}`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Analytics />
       </body>
     </html>
   )
