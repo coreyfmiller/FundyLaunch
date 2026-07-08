@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`bg-background ${inter.variable} ${jakarta.variable}`}>
+    <html lang="en" className={`bg-background light ${inter.variable} ${jakarta.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
