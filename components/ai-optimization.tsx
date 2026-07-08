@@ -29,7 +29,7 @@ export function AiOptimization() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white shadow-xl">
             <Image
-              src="/ai-search.png"
+              src="/ai-search2.png"
               alt="An AI assistant recommending a local business as the best answer"
               width={720}
               height={720}
