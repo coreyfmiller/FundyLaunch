@@ -27,6 +27,30 @@ export default function ContactPage() {
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    const services: string[] = []
+    formData.getAll("services").forEach((v) => services.push(v as string))
+
+    const payload = {
+      formType: "contact",
+      name: formData.get("name"),
+      business: formData.get("business"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      website: formData.get("website"),
+      services,
+      budget: formData.get("budget"),
+      details: formData.get("details"),
+      referral: formData.get("referral"),
+    }
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
     setSubmitted(true)
   }
 

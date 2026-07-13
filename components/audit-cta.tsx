@@ -15,6 +15,23 @@ export function AuditCta() {
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    const payload = {
+      formType: "audit",
+      name: formData.get("name"),
+      business: formData.get("business"),
+      email: formData.get("email"),
+      website: formData.get("website"),
+      details: formData.get("details"),
+    }
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
     setSubmitted(true)
   }
 

@@ -1,3 +1,5 @@
+"use client"
+
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Check, ArrowRight, Heart, Globe, Users, TrendingUp } from "lucide-react"
@@ -238,8 +240,33 @@ export default function NonprofitsPage() {
 
 function NonprofitForm() {
   return (
-    <form className="space-y-5">
-      <div className="grid gap-4 sm:grid-cols-2">
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        const form = e.currentTarget
+        const formData = new FormData(form)
+
+        const payload = {
+          formType: "nonprofit",
+          name: formData.get("name"),
+          email: formData.get("email"),
+          org: formData.get("org"),
+          mission: formData.get("mission"),
+          website: formData.get("website"),
+          needs: formData.get("needs"),
+        }
+
+        fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        })
+
+        form.reset()
+        form.innerHTML = `<div class="flex flex-col items-center py-10 text-center"><p class="font-display text-xl font-bold text-foreground">Thanks — we'll be in touch!</p><p class="mt-2 text-sm text-muted-foreground">We review every application and respond within one week.</p></div>`
+      }}
+      className="space-y-5"
+    >  <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-foreground">
             Your Name
