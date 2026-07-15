@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { CheckCircle2, Send, Mail, MapPin, Clock } from "lucide-react"
+import { CheckCircle2, Send } from "lucide-react"
 
 const services = [
   "Website Design",
@@ -76,42 +76,8 @@ export default function ContactPage() {
             {/* Contact info sidebar */}
             <div className="space-y-8 lg:col-span-1">
               <div className="rounded-2xl border border-border bg-card p-6">
-                <h2 className="font-display text-lg font-bold text-foreground">Get in touch</h2>
-                <ul className="mt-5 space-y-4">
-                  <li className="flex items-start gap-3">
-                    <Mail className="mt-0.5 size-5 shrink-0 text-accent" />
-                    <div>
-                      <p className="text-sm font-medium text-foreground">Email</p>
-                      <a
-                        href="mailto:hello@fundylaunch.ca"
-                        className="text-sm text-muted-foreground hover:text-accent"
-                      >
-                        hello@fundylaunch.ca
-                      </a>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <MapPin className="mt-0.5 size-5 shrink-0 text-accent" />
-                    <div>
-                      <p className="text-sm font-medium text-foreground">Location</p>
-                      <p className="text-sm text-muted-foreground">Serving Atlantic Canada</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Clock className="mt-0.5 size-5 shrink-0 text-accent" />
-                    <div>
-                      <p className="text-sm font-medium text-foreground">Response time</p>
-                      <p className="text-sm text-muted-foreground">Within 1 business day</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl border border-border bg-secondary/40 p-6">
-                <h3 className="font-display text-sm font-bold text-foreground">
-                  What happens next?
-                </h3>
-                <ol className="mt-4 space-y-3 text-sm text-muted-foreground">
+                <h2 className="font-display text-lg font-bold text-foreground">What happens next?</h2>
+                <ol className="mt-5 space-y-4 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">
                       1
@@ -131,6 +97,15 @@ export default function ContactPage() {
                     You get a custom plan tailored to your goals
                   </li>
                 </ol>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-secondary/40 p-6">
+                <h3 className="font-display text-sm font-bold text-foreground">
+                  Response time
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  We reply within one business day. No spam, no pressure.
+                </p>
               </div>
             </div>
 
@@ -173,7 +148,7 @@ export default function ContactPage() {
                         label="Phone (optional)"
                         name="phone"
                         type="tel"
-                        placeholder="(902) 555-0123"
+                        placeholder="(902) 000-0000"
                       />
                     </div>
                     <Field
