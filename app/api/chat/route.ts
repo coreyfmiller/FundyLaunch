@@ -48,5 +48,7 @@ IMPORTANT:
         messages,
     });
 
-    return result.toTextStreamResponse();
+    return new Response(result.textStream, {
+        headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
 }
