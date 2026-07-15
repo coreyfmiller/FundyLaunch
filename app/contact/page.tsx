@@ -99,14 +99,6 @@ export default function ContactPage() {
                 </ol>
               </div>
 
-              <div className="rounded-2xl border border-border bg-secondary/40 p-6">
-                <h3 className="font-display text-sm font-bold text-foreground">
-                  Response time
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  We reply within one business day. No spam, no pressure.
-                </p>
-              </div>
             </div>
 
             {/* Intake form */}
