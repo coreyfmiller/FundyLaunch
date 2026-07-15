@@ -3,23 +3,23 @@ import { Star } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "Within 60 days we went from invisible on Google to showing up in the Map Pack. The phone started ringing and hasn't stopped.",
-    name: "Mike Thompson",
-    business: "Thompson Roofing, Halifax",
+      "We needed a digital presence that matched the quality of our custom builds. The site they delivered generates qualified leads on autopilot — our inquiry volume doubled in the first month.",
+    name: "David Leblanc",
+    business: "Ironwood Atlantic, Fredericton",
     stars: 5,
   },
   {
     quote:
-      "They built us a site that actually brings in leads—not just a pretty page. Best marketing investment we've made.",
+      "The site is stunning and functional. The automated lead capture system qualifies prospects before they even call, saving us hours every week. We're now the top result in our area.",
     name: "Sarah Mitchell",
-    business: "Mitchell Plumbing & Heating",
+    business: "Diamond Floor Epoxy",
     stars: 5,
   },
   {
     quote:
-      "The AI search stuff blew my mind. People are finding us through ChatGPT now. Nobody else was even talking about this.",
-    name: "Dave Carter",
-    business: "Carter Electrical Services",
+      "They built our entire website and a custom AI chatbot that handles client inquiries 24/7. It qualifies leads while I focus on billable work. The chatbot alone saves me hours every week.",
+    name: "Ron Miller",
+    business: "RP Miller Consulting, Lakeville Corner",
     stars: 5,
   },
 ]

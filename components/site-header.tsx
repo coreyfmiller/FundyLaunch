@@ -7,9 +7,9 @@ import { CtaLink } from "@/components/cta-link"
 
 const navLinks = [
   { label: "Services", href: "#services" },
+  { label: "Work", href: "#work" },
   { label: "AI Search", href: "#ai" },
   { label: "Process", href: "#process" },
-  { label: "Growth Program", href: "#growth" },
   { label: "Contact", href: "/contact" },
 ]
 
