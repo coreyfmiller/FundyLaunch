@@ -12,6 +12,7 @@ import { Faq } from "@/components/faq"
 import { AuditCta } from "@/components/audit-cta"
 import { SiteFooter } from "@/components/site-footer"
 import { MobileCta } from "@/components/mobile-cta"
+import { Chatbot } from "@/components/chatbot"
 
 export default function Page() {
   return (
@@ -32,6 +33,7 @@ export default function Page() {
       </main>
       <SiteFooter />
       <MobileCta />
+      <Chatbot />
     </>
   )
 }
