@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { ValueStrip } from "@/components/value-strip"
 import { Services } from "@/components/services"
+import { RecentWork } from "@/components/recent-work"
 import { Testimonials } from "@/components/testimonials"
 import { AiOptimization } from "@/components/ai-optimization"
 import { Process } from "@/components/process"
@@ -20,6 +21,7 @@ export default function Page() {
         <Hero />
         <ValueStrip />
         <Services />
+        <RecentWork />
         <Testimonials />
         <AiOptimization />
         <Process />
