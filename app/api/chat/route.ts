@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { streamText } from 'ai';
+import { streamText, toTextStream } from 'ai';
 
 export const maxDuration = 30;
 
@@ -48,7 +48,7 @@ IMPORTANT:
         messages,
     });
 
-    return new Response(result.textStream, {
+    return new Response(toTextStream(result.stream), {
         headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
 }
