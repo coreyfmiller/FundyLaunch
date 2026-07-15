@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
   description:
     'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search with high-performing websites and local SEO that generate more calls and customers.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -47,8 +46,41 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fundylaunch.ca/#business",
+        name: "Fundy Launch",
+        url: "https://fundylaunch.ca",
+        description:
+          "Web design and local marketing agency helping Atlantic Canadian contractors and service businesses get found on Google, Maps, and AI Search.",
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Atlantic Canada",
+        },
+        serviceType: ["Web Design", "Local SEO", "AI Search Optimization"],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://fundylaunch.ca/#website",
+        url: "https://fundylaunch.ca",
+        name: "Fundy Launch",
+        publisher: { "@id": "https://fundylaunch.ca/#business" },
+        inLanguage: "en-CA",
+      },
+    ],
+  }
+
   return (
     <html lang="en" className={`bg-background light ${inter.variable} ${jakarta.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

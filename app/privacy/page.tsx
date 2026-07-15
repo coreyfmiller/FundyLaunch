@@ -178,8 +178,8 @@ export default function PrivacyPage() {
             <section>
               <h2 className="font-display text-lg font-bold text-foreground">Governing Law</h2>
               <p className="mt-3">
-                These terms are governed by the laws of the Province of Nova Scotia, Canada. Any
-                disputes will be resolved in the courts of Nova Scotia.
+                These terms are governed by the laws of the Province of New Brunswick, Canada. Any
+                disputes will be resolved in the courts of New Brunswick.
               </p>
             </section>
 

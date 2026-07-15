@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Mail, MapPin, PhoneCall } from "lucide-react"
 
 const cols = [
   {
@@ -40,24 +39,6 @@ export function SiteFooter() {
             We help Atlantic Canadian contractors and local businesses dominate Google, Maps, and AI
             Search through high-performing websites and smart marketing.
           </p>
-          <ul className="mt-6 space-y-2 text-sm text-foreground">
-            <li className="flex items-center gap-2">
-              <PhoneCall className="size-4 text-accent" />
-              <a href="tel:+19025550123" className="hover:text-accent">
-                (902) 555-0123
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail className="size-4 text-accent" />
-              <a href="mailto:hello@fundylaunch.ca" className="hover:text-accent">
-                hello@fundylaunch.ca
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <MapPin className="size-4 text-accent" />
-              Serving Atlantic Canada
-            </li>
-          </ul>
         </div>
 
         {cols.map((col) => (
