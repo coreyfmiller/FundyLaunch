@@ -5,6 +5,8 @@ import { notFound } from "next/navigation"
 import { CtaLink } from "@/components/cta-link"
 import { ArrowRight } from "lucide-react"
 
+export const dynamic = "force-dynamic"
+
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }))
 }
@@ -23,6 +25,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const post = posts.find((p) => p.slug === slug)
   if (!post) notFound()
+
+  const now = new Date()
+  if (new Date(post.date) > now) notFound()
 
   return (
     <>

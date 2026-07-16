@@ -9,7 +9,12 @@ export const metadata = {
     "Tips, guides, and insights on web design, local SEO, and AI search optimization for Atlantic Canadian businesses.",
 }
 
+export const dynamic = "force-dynamic"
+
 export default function BlogPage() {
+  const now = new Date()
+  const published = posts.filter((post) => new Date(post.date) <= now)
+
   return (
     <>
       <SiteHeader />
@@ -27,7 +32,7 @@ export default function BlogPage() {
           </div>
 
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
+            {published.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
