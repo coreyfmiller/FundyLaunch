@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
   description:
     'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search with high-performing websites and local SEO that generate more calls and customers.',
+  openGraph: {
+    title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
+    description:
+      'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search.',
+    url: 'https://fundylaunch.com',
+    siteName: 'Fundy Launch',
+    images: [
+      {
+        url: 'https://fundylaunch.com/og-image.png',
+        width: 1730,
+        height: 909,
+        alt: 'Fundy Launch — Web Design & Marketing for Local Businesses',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
+    description:
+      'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search.',
+    images: ['https://fundylaunch.com/og-image.png'],
+  },
   icons: {
     icon: [
       {
