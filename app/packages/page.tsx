@@ -138,6 +138,76 @@ export default function PackagesPage() {
             ))}
           </div>
 
+          {/* Add-on: Content Engine */}
+          <div className="mt-14">
+            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+                <div>
+                  <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+                    Add-on service
+                  </span>
+                  <h2 className="mt-4 font-display text-2xl font-bold text-foreground">
+                    Weekly Blog Content Engine
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    We write and publish one SEO-optimized blog post per week targeting real
+                    keywords your customers search for in your area. Published automatically.
+                    You never think about it. In 6 months you&apos;ll have 24 indexed pages
+                    pulling in traffic your competitors can&apos;t match.
+                  </p>
+                  <div className="mt-5">
+                    <span className="font-display text-3xl font-extrabold text-foreground">
+                      $600
+                    </span>
+                    <span className="ml-1.5 text-sm text-muted-foreground">/month (4 posts)</span>
+                  </div>
+                  <CtaLink href="/contact" size="lg" className="mt-6">
+                    Add to Any Package
+                    <ArrowRight />
+                  </CtaLink>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">4 blog posts per month, written for your trade and area</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">Keyword-targeted to rank for local searches</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">Published on your site automatically each week</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">Written in your voice with local references and expertise</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">Builds organic traffic that compounds month over month</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                      <Check className="size-3.5 text-accent" />
+                    </span>
+                    <span className="text-sm text-foreground">Zero effort required from you</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom note */}
           <div className="mx-auto mt-14 max-w-2xl rounded-2xl border border-border bg-secondary/40 p-6 text-center md:p-8">
             <h3 className="font-display text-lg font-bold text-foreground">
