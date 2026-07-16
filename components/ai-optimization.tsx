@@ -75,7 +75,7 @@ export function AiOptimization() {
             ))}
           </div>
 
-          <CtaLink href="#audit" size="lg" className="mt-8">
+          <CtaLink href="/contact" size="lg" className="mt-8">
             See if AI recommends you
             <ArrowRight />
           </CtaLink>

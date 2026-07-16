@@ -172,7 +172,7 @@ export function RecentWork() {
           </div>
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
-            Know a young entrepreneur in the Greater Saint John area who needs a website?{" "}
+            Know a young entrepreneur or non-profit in the Greater Saint John area who needs a website?{" "}
             <a href="/contact" className="font-semibold text-emerald-400 hover:text-emerald-300">
               Get in touch
             </a>{" "}

@@ -33,7 +33,7 @@ export function GrowthProgram() {
                 We start with businesses where one new customer is worth hundreds or thousands of
                 dollars—because that's where marketing delivers real ROI.
               </p>
-              <CtaLink href="#audit" size="lg" className="mt-8">
+              <CtaLink href="/contact" size="lg" className="mt-8">
                 Start with a free audit
                 <ArrowRight />
               </CtaLink>
