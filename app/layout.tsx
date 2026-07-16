@@ -77,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-background light ${inter.variable} ${jakarta.variable}`}>
       <head>
+        <meta name="google-site-verification" content="UQZpO4FDMn797WmV0K5S4351gZB2Qv9ASKh1L5W-3ck" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
