@@ -16,6 +16,7 @@ const cols = [
     links: [
       { label: "Our Process", href: "#process" },
       { label: "Who We Help", href: "#industries" },
+      { label: "Blog", href: "/blog" },
       { label: "Packages", href: "/packages" },
       { label: "Free Audit", href: "/contact" },
       { label: "Non-Profits", href: "/nonprofits" },
