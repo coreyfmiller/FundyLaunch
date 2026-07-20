@@ -218,7 +218,7 @@ export default function PackagesPage() {
               best path forward. No pressure, no commitment.
             </p>
             <CtaLink href="/contact" size="lg" className="mt-5">
-              Get Your Free Audit
+              Get Your Free Demo
               <ArrowRight />
             </CtaLink>
           </div>

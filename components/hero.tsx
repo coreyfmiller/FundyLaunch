@@ -33,7 +33,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <CtaLink href="/contact" size="lg">
-              Get Your Free Website &amp; SEO Audit
+              Get Your Free Demo Site
               <ArrowRight />
             </CtaLink>
             <CtaLink href="#services" size="lg" variant="outline">

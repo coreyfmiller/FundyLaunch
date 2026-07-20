@@ -18,7 +18,7 @@ const cols = [
       { label: "Who We Help", href: "#industries" },
       { label: "Blog", href: "/blog" },
       { label: "Packages", href: "/packages" },
-      { label: "Free Audit", href: "/contact" },
+      { label: "Free Demo", href: "/contact" },
       { label: "Non-Profits", href: "/nonprofits" },
     ],
   },

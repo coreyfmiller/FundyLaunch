@@ -34,7 +34,7 @@ export function GrowthProgram() {
                 dollars—because that's where marketing delivers real ROI.
               </p>
               <CtaLink href="/contact" size="lg" className="mt-8">
-                Start with a free audit
+                Get your free demo
                 <ArrowRight />
               </CtaLink>
             </div>

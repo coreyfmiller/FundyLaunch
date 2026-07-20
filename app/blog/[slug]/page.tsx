@@ -54,7 +54,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               heavy lifting.
             </p>
             <CtaLink href="/contact" size="lg" className="mt-5">
-              Get Your Free Audit
+              Get Your Free Demo
               <ArrowRight />
             </CtaLink>
           </div>

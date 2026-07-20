@@ -14,7 +14,7 @@ export function MobileCta() {
         href="/contact"
         className="flex h-11 w-full items-center justify-center gap-1.5 rounded-xl bg-accent text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent/90"
       >
-        Get Your Free Audit
+        Get Your Free Demo
         <ArrowRight className="size-4" />
       </a>
     </div>

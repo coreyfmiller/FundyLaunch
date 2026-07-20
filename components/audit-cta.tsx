@@ -2,10 +2,10 @@ import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { CtaLink } from "@/components/cta-link"
 
 const perks = [
-  "A review of your current website & branding",
-  "How you rank on Google & Google Maps",
-  "Whether AI assistants recommend you",
-  "A clear, prioritized growth plan",
+  "A custom demo website built for your business",
+  "See your brand, services, and area brought to life",
+  "No templates — designed specifically for you",
+  "Yours to review with zero obligation",
 ]
 
 export function AuditCta() {
@@ -18,11 +18,11 @@ export function AuditCta() {
               Free, no obligation
             </p>
             <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Ready to get more customers finding you first?
+              See what your new website could look like
             </h2>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Tell us about your business and we'll put together a free audit showing exactly
-              where you stand and what to fix.
+              Tell us about your business and we'll build you a free demo site showing exactly
+              what we'd create for you. No commitment, no pressure.
             </p>
 
             <ul className="mt-8 inline-grid gap-3 text-left sm:grid-cols-2">
@@ -36,7 +36,7 @@ export function AuditCta() {
 
             <div className="mt-8">
               <CtaLink href="/contact" size="lg">
-                Get Your Free Audit
+                Get Your Free Demo
                 <ArrowRight />
               </CtaLink>
             </div>
