@@ -239,12 +239,12 @@ export function RecentWork() {
                   rel="noopener noreferrer"
                   className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
                 >
-                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <div className="relative aspect-video w-full overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.alt}
-                      width={800}
-                      height={600}
+                      width={1200}
+                      height={630}
                       className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
@@ -271,12 +271,12 @@ export function RecentWork() {
                   key={item.title}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card"
                 >
-                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <div className="relative aspect-video w-full overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.alt}
-                      width={800}
-                      height={600}
+                      width={1200}
+                      height={630}
                       className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
