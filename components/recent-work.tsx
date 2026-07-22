@@ -44,6 +44,99 @@ const works = [
   },
 ]
 
+const industryShowcase = [
+  {
+    title: "Atlantic Plumbing and Heating",
+    industry: "Plumbing & HVAC",
+    description:
+      "A professional website for a full-service plumbing and heating company. Emergency services, installations, and maintenance with online booking.",
+    image: "/atlantic-plumbing.png",
+    alt: "Atlantic Plumbing and Heating website — plumbing and HVAC services",
+    link: "https://atlantic-plumbing.vercel.app",
+  },
+  {
+    title: "Riverstone Renovations",
+    industry: "Renovations",
+    description:
+      "A clean, trust-building site for a renovation company. Kitchens, bathrooms, basements, and full-home renovations with a portfolio and quote system.",
+    image: "/riverstone.png",
+    alt: "Riverstone Renovations website — home renovation contractor",
+    link: "https://riverstone-kohl.vercel.app",
+  },
+  {
+    title: "Greenstone Landscaping",
+    industry: "Landscaping",
+    description:
+      "A vibrant website for a landscaping company. Lawn care, hardscaping, garden design, and seasonal maintenance with service area pages.",
+    image: "/greenstone.png",
+    alt: "Greenstone Landscaping website — landscaping and lawn care services",
+    link: "https://greenstone-rho.vercel.app",
+  },
+  {
+    title: "Maritime Pest Management",
+    industry: "Pest Control",
+    description:
+      "A professional site for a pest control company. Residential and commercial services with emergency response and prevention programs.",
+    image: "/maritime-pest.png",
+    alt: "Maritime Pest Management website — pest control services",
+    link: "https://maritime-pest.vercel.app",
+  },
+  {
+    title: "Fundy Climate Solutions",
+    industry: "HVAC",
+    description:
+      "A modern site for a heating, cooling, and ventilation company. Heat pumps, furnaces, and AC installations with financing options and emergency service.",
+    image: "/fundy-climate.png",
+    alt: "Fundy Climate Solutions website — HVAC and climate control",
+    link: "https://fundy-seven.vercel.app",
+  },
+  {
+    title: "Pristine Auto Detailing",
+    industry: "Auto Detailing",
+    description:
+      "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
+    image: "/pristine.png",
+    alt: "Pristine Auto Detailing website — mobile car detailing services",
+    link: "https://pristine-chi.vercel.app",
+  },
+  {
+    title: "Crystal Clear Cleaning Co.",
+    industry: "Cleaning",
+    description:
+      "A bright, trustworthy site for a residential and commercial cleaning company. Recurring service plans, instant quotes, and a referral program.",
+    image: "/crystal-clear.png",
+    alt: "Crystal Clear Cleaning Co. website — residential and commercial cleaning",
+    link: "https://crystal-clear-olive.vercel.app",
+  },
+  {
+    title: "Harbour Realty",
+    industry: "Real Estate",
+    description:
+      "A premium real estate website with property listings, agent profiles, neighbourhood guides, and market reports for coastal communities.",
+    image: "/harbour.png",
+    alt: "Harbour Realty website — real estate listings and agent profiles",
+    link: "https://harbour-gamma.vercel.app",
+  },
+  {
+    title: "Summit Roofing NB",
+    industry: "Roofing",
+    description:
+      "A conversion-focused site for a roofing contractor. Shingle, metal, and flat roof services with storm damage repair and financing options.",
+    image: "/summit-roofing.png",
+    alt: "Summit Roofing NB website — roofing contractor services",
+    link: "https://summit-roofing-ten.vercel.app",
+  },
+  {
+    title: "Spark Electric",
+    industry: "Electrical",
+    description:
+      "A modern website for an electrical contractor. Panel upgrades, EV charger installations, and smart home wiring with 24/7 emergency service.",
+    image: "/spark-electric.png",
+    alt: "Spark Electric website — residential and commercial electrical services",
+    link: "https://spark-electric-blue.vercel.app",
+  },
+]
+
 const youthProjects = [
   {
     title: "KV Adventure Club",
@@ -119,6 +212,100 @@ export function RecentWork() {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* Industry Showcase */}
+        <div className="mt-20 border-t border-border pt-16">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+              Industry Concepts
+            </span>
+            <h2 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              We know your industry
+            </h2>
+            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+              Design concepts built for specific trades and businesses. See what a modern website
+              looks like for your industry — then let us build yours.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {industryShowcase.map((item) =>
+              item.link ? (
+                <a
+                  key={item.title}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
+                >
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      width={800}
+                      height={600}
+                      className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="font-display text-lg font-bold text-foreground">
+                        {item.title}
+                      </h3>
+                      <span className="shrink-0 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent">
+                        {item.industry}
+                      </span>
+                    </div>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent">
+                      View demo <ExternalLink className="size-3.5" />
+                    </span>
+                  </div>
+                </a>
+              ) : (
+                <div
+                  key={item.title}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card"
+                >
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      width={800}
+                      height={600}
+                      className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="font-display text-lg font-bold text-foreground">
+                        {item.title}
+                      </h3>
+                      <span className="shrink-0 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent">
+                        {item.industry}
+                      </span>
+                    </div>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+
+          <p className="mt-8 text-center text-sm text-muted-foreground">
+            Don&apos;t see your industry?{" "}
+            <a href="/contact" className="font-semibold text-accent hover:text-accent/80">
+              Tell us what you do
+            </a>{" "}
+            — we&apos;ll show you what&apos;s possible.
+          </p>
         </div>
 
         {/* Young Entrepreneur Initiative */}
