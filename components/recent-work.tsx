@@ -82,15 +82,6 @@ const industryShowcase = [
     link: "https://maritime-pest.vercel.app",
   },
   {
-    title: "Fundy Climate Solutions",
-    industry: "HVAC",
-    description:
-      "A modern site for a heating, cooling, and ventilation company. Heat pumps, furnaces, and AC installations with financing options and emergency service.",
-    image: "/fundy-climate.png",
-    alt: "Fundy Climate Solutions website — HVAC and climate control",
-    link: "https://fundy-seven.vercel.app",
-  },
-  {
     title: "Pristine Auto Detailing",
     industry: "Auto Detailing",
     description:
