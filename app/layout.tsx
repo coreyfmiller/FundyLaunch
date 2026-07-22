@@ -12,9 +12,25 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
+  metadataBase: new URL('https://fundylaunch.com'),
+  title: 'Fundy Launch | Web Design & Marketing for Local Businesses in Atlantic Canada',
   description:
-    'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search with high-performing websites and local SEO that generate more calls and customers.',
+    'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search with high-performing websites, local SEO, and AI optimization that generate more calls and customers.',
+  keywords: [
+    'web design Atlantic Canada',
+    'local SEO New Brunswick',
+    'contractor website',
+    'AI search optimization',
+    'Google Maps ranking',
+    'local business marketing',
+    'Fundy Launch',
+    'Quispamsis web design',
+    'Saint John web design',
+    'Fredericton web design',
+  ],
+  alternates: {
+    canonical: 'https://fundylaunch.com',
+  },
   openGraph: {
     title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
     description:
@@ -24,12 +40,13 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://fundylaunch.com/og-image.png',
-        width: 1730,
-        height: 909,
-        alt: 'Fundy Launch — Web Design & Marketing for Local Businesses',
+        width: 1200,
+        height: 630,
+        alt: 'Fundy Launch — Web Design & Marketing for Local Businesses in Atlantic Canada',
       },
     ],
     type: 'website',
+    locale: 'en_CA',
   },
   twitter: {
     card: 'summary_large_image',
@@ -75,23 +92,29 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://fundylaunch.ca/#business",
+        "@id": "https://fundylaunch.com/#business",
         name: "Fundy Launch",
-        url: "https://fundylaunch.ca",
+        url: "https://fundylaunch.com",
         description:
           "Web design and local marketing agency helping Atlantic Canadian contractors and service businesses get found on Google, Maps, and AI Search.",
         areaServed: {
           "@type": "AdministrativeArea",
           name: "Atlantic Canada",
         },
-        serviceType: ["Web Design", "Local SEO", "AI Search Optimization"],
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Quispamsis",
+          addressRegion: "New Brunswick",
+          addressCountry: "CA",
+        },
+        serviceType: ["Web Design", "Local SEO", "AI Search Optimization", "Google Maps Optimization"],
       },
       {
         "@type": "WebSite",
-        "@id": "https://fundylaunch.ca/#website",
-        url: "https://fundylaunch.ca",
+        "@id": "https://fundylaunch.com/#website",
+        url: "https://fundylaunch.com",
         name: "Fundy Launch",
-        publisher: { "@id": "https://fundylaunch.ca/#business" },
+        publisher: { "@id": "https://fundylaunch.com/#business" },
         inLanguage: "en-CA",
       },
     ],
