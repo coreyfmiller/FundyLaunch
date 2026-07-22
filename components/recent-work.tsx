@@ -50,7 +50,7 @@ const industryShowcase = [
     industry: "Plumbing & HVAC",
     description:
       "A professional website for a full-service plumbing and heating company. Emergency services, installations, and maintenance with online booking.",
-    image: "/atlantic-plumbing.png",
+    image: "/atlantic-plumbing.jpg",
     alt: "Atlantic Plumbing and Heating website — plumbing and HVAC services",
     link: "https://atlantic-plumbing.vercel.app",
   },
@@ -59,7 +59,7 @@ const industryShowcase = [
     industry: "Renovations",
     description:
       "A clean, trust-building site for a renovation company. Kitchens, bathrooms, basements, and full-home renovations with a portfolio and quote system.",
-    image: "/riverstone.png",
+    image: "/riverstone.jpg",
     alt: "Riverstone Renovations website — home renovation contractor",
     link: "https://riverstone-kohl.vercel.app",
   },
@@ -68,7 +68,7 @@ const industryShowcase = [
     industry: "Landscaping",
     description:
       "A vibrant website for a landscaping company. Lawn care, hardscaping, garden design, and seasonal maintenance with service area pages.",
-    image: "/greenstone.png",
+    image: "/greenstone.jpg",
     alt: "Greenstone Landscaping website — landscaping and lawn care services",
     link: "https://greenstone-rho.vercel.app",
   },
@@ -77,7 +77,7 @@ const industryShowcase = [
     industry: "Pest Control",
     description:
       "A professional site for a pest control company. Residential and commercial services with emergency response and prevention programs.",
-    image: "/maritime-pest.png",
+    image: "/maritime-pest.jpg",
     alt: "Maritime Pest Management website — pest control services",
     link: "https://maritime-pest.vercel.app",
   },
@@ -86,7 +86,7 @@ const industryShowcase = [
     industry: "HVAC",
     description:
       "A modern site for a heating, cooling, and ventilation company. Heat pumps, furnaces, and AC installations with financing options and emergency service.",
-    image: "/fundy-climate.png",
+    image: "/fundy-climate.jpg",
     alt: "Fundy Climate Solutions website — HVAC and climate control",
     link: "https://fundy-seven.vercel.app",
   },
@@ -95,7 +95,7 @@ const industryShowcase = [
     industry: "Auto Detailing",
     description:
       "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
-    image: "/pristine.png",
+    image: "/pristine.jpg",
     alt: "Pristine Auto Detailing website — mobile car detailing services",
     link: "https://pristine-chi.vercel.app",
   },
@@ -104,7 +104,7 @@ const industryShowcase = [
     industry: "Cleaning",
     description:
       "A bright, trustworthy site for a residential and commercial cleaning company. Recurring service plans, instant quotes, and a referral program.",
-    image: "/crystal-clear.png",
+    image: "/crystal-clear.jpg",
     alt: "Crystal Clear Cleaning Co. website — residential and commercial cleaning",
     link: "https://crystal-clear-olive.vercel.app",
   },
@@ -113,7 +113,7 @@ const industryShowcase = [
     industry: "Real Estate",
     description:
       "A premium real estate website with property listings, agent profiles, neighbourhood guides, and market reports for coastal communities.",
-    image: "/harbour.png",
+    image: "/harbour.jpg",
     alt: "Harbour Realty website — real estate listings and agent profiles",
     link: "https://harbour-gamma.vercel.app",
   },
@@ -122,7 +122,7 @@ const industryShowcase = [
     industry: "Roofing",
     description:
       "A conversion-focused site for a roofing contractor. Shingle, metal, and flat roof services with storm damage repair and financing options.",
-    image: "/summit-roofing.png",
+    image: "/summit-roofing.jpg",
     alt: "Summit Roofing NB website — roofing contractor services",
     link: "https://summit-roofing-ten.vercel.app",
   },
@@ -131,7 +131,7 @@ const industryShowcase = [
     industry: "Electrical",
     description:
       "A modern website for an electrical contractor. Panel upgrades, EV charger installations, and smart home wiring with 24/7 emergency service.",
-    image: "/spark-electric.png",
+    image: "/spark-electric.jpg",
     alt: "Spark Electric website — residential and commercial electrical services",
     link: "https://spark-electric-blue.vercel.app",
   },
