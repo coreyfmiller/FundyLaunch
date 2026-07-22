@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'Fundy Launch',
     images: [
       {
-        url: 'https://fundylaunch.com/og-image.png',
+        url: 'https://fundylaunch.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Fundy Launch — Web Design & Marketing for Local Businesses in Atlantic Canada',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: 'Fundy Launch | Web Design & Marketing for Local Businesses',
     description:
       'We help Atlantic Canadian contractors and local businesses get found on Google, Maps, and AI Search.',
-    images: ['https://fundylaunch.com/og-image.png'],
+    images: ['https://fundylaunch.com/og-image.jpg'],
   },
   icons: {
     icon: [
