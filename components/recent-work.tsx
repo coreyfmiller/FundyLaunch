@@ -55,6 +55,15 @@ const industryShowcase = [
     link: "https://atlantic-plumbing.vercel.app",
   },
   {
+    title: "Pristine Auto Detailing",
+    industry: "Auto Detailing",
+    description:
+      "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
+    image: "/pristine.png",
+    alt: "Pristine Auto Detailing website — mobile car detailing services",
+    link: "https://pristine-chi.vercel.app",
+  },
+  {
     title: "Riverstone Renovations",
     industry: "Renovations",
     description:
@@ -80,15 +89,6 @@ const industryShowcase = [
     image: "/maritime-pest.png",
     alt: "Maritime Pest Management website — pest control services",
     link: "https://maritime-pest.vercel.app",
-  },
-  {
-    title: "Pristine Auto Detailing",
-    industry: "Auto Detailing",
-    description:
-      "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
-    image: "/pristine.png",
-    alt: "Pristine Auto Detailing website — mobile car detailing services",
-    link: "https://pristine-chi.vercel.app",
   },
   {
     title: "Crystal Clear Cleaning Co.",
