@@ -18,7 +18,7 @@ const industryShowcase = [
       "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
     image: "/pristine.png",
     alt: "Pristine Auto Detailing website — mobile car detailing services",
-    link: "https://pristine-chi.vercel.app",
+    link: "https://pristine-sooty-gamma.vercel.app",
   },
   {
     title: "Riverstone Renovations",
@@ -27,7 +27,7 @@ const industryShowcase = [
       "A clean, trust-building site for a renovation company. Kitchens, bathrooms, basements, and full-home renovations with a portfolio and quote system.",
     image: "/riverstone.png",
     alt: "Riverstone Renovations website — home renovation contractor",
-    link: "https://riverstone-kohl.vercel.app",
+    link: "https://riverstone-five.vercel.app",
   },
   {
     title: "Greenstone Landscaping",
@@ -36,7 +36,7 @@ const industryShowcase = [
       "A vibrant website for a landscaping company. Lawn care, hardscaping, garden design, and seasonal maintenance with service area pages.",
     image: "/greenstone.png",
     alt: "Greenstone Landscaping website — landscaping and lawn care services",
-    link: "https://greenstone-rho.vercel.app",
+    link: "https://greenstone-ruby.vercel.app",
   },
   {
     title: "Maritime Pest Management",
@@ -54,7 +54,7 @@ const industryShowcase = [
       "A bright, trustworthy site for a residential and commercial cleaning company. Recurring service plans, instant quotes, and a referral program.",
     image: "/crystal-clear.png",
     alt: "Crystal Clear Cleaning Co. website — residential and commercial cleaning",
-    link: "https://crystal-clear-olive.vercel.app",
+    link: "https://crystal-clear-pink.vercel.app",
   },
   {
     title: "Harbour Realty",
@@ -63,7 +63,7 @@ const industryShowcase = [
       "A premium real estate website with property listings, agent profiles, neighbourhood guides, and market reports for coastal communities.",
     image: "/harbour.png",
     alt: "Harbour Realty website — real estate listings and agent profiles",
-    link: "https://harbour-gamma.vercel.app",
+    link: "https://harbour-phi.vercel.app",
   },
   {
     title: "Summit Roofing NB",
@@ -72,7 +72,7 @@ const industryShowcase = [
       "A conversion-focused site for a roofing contractor. Shingle, metal, and flat roof services with storm damage repair and financing options.",
     image: "/summit-roofing.png",
     alt: "Summit Roofing NB website — roofing contractor services",
-    link: "https://summit-roofing-ten.vercel.app",
+    link: "https://summit-roofing-pied-nu.vercel.app",
   },
   {
     title: "Spark Electric",
@@ -81,7 +81,7 @@ const industryShowcase = [
       "A modern website for an electrical contractor. Panel upgrades, EV charger installations, and smart home wiring with 24/7 emergency service.",
     image: "/spark-electric.png",
     alt: "Spark Electric website — residential and commercial electrical services",
-    link: "https://spark-electric-blue.vercel.app",
+    link: "https://spark-electric-two.vercel.app",
   },
 ]
 
