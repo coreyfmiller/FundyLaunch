@@ -3,7 +3,7 @@ import { Star } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "We needed a digital presence that matched the quality of our custom builds. The site they delivered generates qualified leads on autopilot — our inquiry volume doubled in the first month.",
+      "We needed a digital presence that matched the quality of our custom builds. The site they delivered generates qualified leads on autopilot, our inquiry volume doubled in the first month.",
     name: "David Leblanc",
     business: "Ironwood Atlantic, Fredericton",
     stars: 5,

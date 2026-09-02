@@ -8,7 +8,7 @@ const industryShowcase = [
     description:
       "A professional website for a full-service plumbing and heating company. Emergency services, installations, and maintenance with online booking.",
     image: "/atlantic-plumbing.png",
-    alt: "Atlantic Plumbing and Heating website — plumbing and HVAC services",
+    alt: "Atlantic Plumbing and Heating website, plumbing and HVAC services",
     link: "https://atlantic-plumbing.vercel.app",
   },
   {
@@ -17,7 +17,7 @@ const industryShowcase = [
     description:
       "A sleek website for a mobile auto detailing business. Package pricing, before/after gallery, and online booking for ceramic coating and paint correction.",
     image: "/pristine.png",
-    alt: "Pristine Auto Detailing website — mobile car detailing services",
+    alt: "Pristine Auto Detailing website, mobile car detailing services",
     link: "https://pristine-sooty-gamma.vercel.app",
   },
   {
@@ -26,7 +26,7 @@ const industryShowcase = [
     description:
       "A clean, trust-building site for a renovation company. Kitchens, bathrooms, basements, and full-home renovations with a portfolio and quote system.",
     image: "/riverstone.png",
-    alt: "Riverstone Renovations website — home renovation contractor",
+    alt: "Riverstone Renovations website, home renovation contractor",
     link: "https://riverstone-five.vercel.app",
   },
   {
@@ -35,7 +35,7 @@ const industryShowcase = [
     description:
       "A vibrant website for a landscaping company. Lawn care, hardscaping, garden design, and seasonal maintenance with service area pages.",
     image: "/greenstone.png",
-    alt: "Greenstone Landscaping website — landscaping and lawn care services",
+    alt: "Greenstone Landscaping website, landscaping and lawn care services",
     link: "https://greenstone-ruby.vercel.app",
   },
   {
@@ -44,7 +44,7 @@ const industryShowcase = [
     description:
       "A professional site for a pest control company. Residential and commercial services with emergency response and prevention programs.",
     image: "/maritime-pest.png",
-    alt: "Maritime Pest Management website — pest control services",
+    alt: "Maritime Pest Management website, pest control services",
     link: "https://maritime-pest.vercel.app",
   },
   {
@@ -53,7 +53,7 @@ const industryShowcase = [
     description:
       "A bright, trustworthy site for a residential and commercial cleaning company. Recurring service plans, instant quotes, and a referral program.",
     image: "/crystal-clear.png",
-    alt: "Crystal Clear Cleaning Co. website — residential and commercial cleaning",
+    alt: "Crystal Clear Cleaning Co. website, residential and commercial cleaning",
     link: "https://crystal-clear-pink.vercel.app",
   },
   {
@@ -62,7 +62,7 @@ const industryShowcase = [
     description:
       "A premium real estate website with property listings, agent profiles, neighbourhood guides, and market reports for coastal communities.",
     image: "/harbour.png",
-    alt: "Harbour Realty website — real estate listings and agent profiles",
+    alt: "Harbour Realty website, real estate listings and agent profiles",
     link: "https://harbour-phi.vercel.app",
   },
   {
@@ -71,7 +71,7 @@ const industryShowcase = [
     description:
       "A conversion-focused site for a roofing contractor. Shingle, metal, and flat roof services with storm damage repair and financing options.",
     image: "/summit-roofing.png",
-    alt: "Summit Roofing NB website — roofing contractor services",
+    alt: "Summit Roofing NB website, roofing contractor services",
     link: "https://summit-roofing-pied-nu.vercel.app",
   },
   {
@@ -80,7 +80,7 @@ const industryShowcase = [
     description:
       "A modern website for an electrical contractor. Panel upgrades, EV charger installations, and smart home wiring with 24/7 emergency service.",
     image: "/spark-electric.png",
-    alt: "Spark Electric website — residential and commercial electrical services",
+    alt: "Spark Electric website, residential and commercial electrical services",
     link: "https://spark-electric-two.vercel.app",
   },
 ]
@@ -91,7 +91,7 @@ const youthProjects = [
     description:
       "A playful, community-driven site for a monthly snail-mail subscription service. Screen-free missions, scavenger hunts, and local discoveries for kids in the Kennebecasis Valley.",
     image: "/kvadventureclub.jpg",
-    alt: "KV Adventure Club — kids adventure subscription service in Kennebecasis Valley",
+    alt: "KV Adventure Club, kids adventure subscription service in Kennebecasis Valley",
     link: "https://kvadventureclub.com",
   },
   {
@@ -99,7 +99,7 @@ const youthProjects = [
     description:
       "A sharp, no-nonsense site for a local lawn care crew in Quispamsis. Seasonal pricing, service breakdowns, and a quick-quote form that gets the phone ringing.",
     image: "/cleancutcrew.jpg",
-    alt: "Clean Cut Crew — lawn mowing and yard services in Quispamsis, NB",
+    alt: "Clean Cut Crew, lawn mowing and yard services in Quispamsis, NB",
     link: "https://www.cleancutcrew.ca",
   },
   {
@@ -107,7 +107,7 @@ const youthProjects = [
     description:
       "From our garden to yours. A vibrant e-commerce site for a kid-run plant nursery in Quispamsis, NB. Siblings Kaelan, Micah, and Madelyn grow heirloom tomatoes, fresh herbs, and colorful peppers.",
     image: "/kids-garden3.png",
-    alt: "Sunrise Seedlings — kid-run plant nursery e-commerce site in Quispamsis, NB",
+    alt: "Sunrise Seedlings, kid-run plant nursery e-commerce site in Quispamsis, NB",
     link: "https://www.sunriseseedlings.com",
   },
 ]
@@ -203,8 +203,7 @@ export function RecentWork() {
           Don&apos;t see your industry?{" "}
           <a href="/contact" className="font-semibold text-accent hover:text-accent/80">
             Tell us what you do
-          </a>{" "}
-          — we&apos;ll show you what&apos;s possible.
+          </a>{" "}, we&apos;ll show you what&apos;s possible.
         </p>
 
         {/* Young Entrepreneur Initiative */}
@@ -261,8 +260,7 @@ export function RecentWork() {
             Know a young entrepreneur or non-profit in the Greater Saint John area who needs a website?{" "}
             <a href="/contact" className="font-semibold text-emerald-400 hover:text-emerald-300">
               Get in touch
-            </a>{" "}
-            — we&apos;d love to help.
+            </a>{" "}, we&apos;d love to help.
           </p>
         </div>
 

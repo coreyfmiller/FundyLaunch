@@ -4,7 +4,7 @@ import { CtaLink } from "@/components/cta-link"
 const perks = [
   "A custom demo website built for your business",
   "See your brand, services, and area brought to life",
-  "No templates — designed specifically for you",
+  "No templates, designed specifically for you",
   "Yours to review with zero obligation",
 ]
 

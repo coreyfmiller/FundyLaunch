@@ -26,12 +26,12 @@ export function GrowthProgram() {
                 Need more than a website? Become a Growth Partner
               </h2>
               <p className="mt-4 text-pretty text-lg leading-relaxed text-primary-foreground/80">
-                Most agencies stop at the website. We become your marketing team—a complete customer
+                Most agencies stop at the website. We become your marketing team, a complete customer
                 acquisition system that keeps bringing in work while you're on the job.
               </p>
               <p className="mt-6 text-sm text-primary-foreground/60">
                 Best for businesses where one new customer is worth hundreds or thousands of
-                dollars—that's where this delivers real ROI.
+                dollars. That's where this delivers real ROI.
               </p>
               <CtaLink href="/packages" size="lg" className="mt-8">
                 See how it works

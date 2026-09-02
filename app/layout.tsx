@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: 'https://fundylaunch.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Fundy Launch — Web Design & Marketing for Local Businesses in Atlantic Canada',
+        alt: 'Fundy Launch, Web Design & Marketing for Local Businesses in Atlantic Canada',
       },
     ],
     type: 'website',

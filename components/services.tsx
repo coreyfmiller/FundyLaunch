@@ -5,7 +5,7 @@ const services = [
     icon: Gauge,
     title: "Website Design",
     description:
-      "Fast, mobile-first websites with professional branding, built to convert visitors into customers—and easy for you to edit.",
+      "Fast, mobile-first websites with professional branding, built to convert visitors into customers, and easy for you to edit.",
     points: [
       "Fast, mobile-first builds",
       "Professional branding",
@@ -29,14 +29,13 @@ const services = [
     icon: Sparkles,
     title: "AI Optimization",
     description:
-      "People aren't just Googling anymore—they're asking AI who the best contractor is. We make sure your business is part of that answer.",
+      "People aren't just Googling anymore. They're asking AI who the best contractor is, and we work with you to make sure your business is part of that answer.",
     points: [
       "Generative Engine Optimization",
       "Answer Engine Optimization",
       "ChatGPT, Gemini, Claude",
       "Perplexity & voice search",
     ],
-    highlight: true,
   },
   {
     icon: Bot,
@@ -71,24 +70,11 @@ export function Services() {
           {services.map((s) => (
             <div
               key={s.title}
-              className={`flex flex-col rounded-2xl border p-6 transition-shadow hover:shadow-lg ${
-                s.highlight
-                  ? "border-accent/40 bg-accent/5"
-                  : "border-border bg-card"
-              }`}
+              className="flex flex-col rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
             >
-              <div
-                className={`flex size-12 items-center justify-center rounded-xl ${
-                  s.highlight ? "bg-accent text-accent-foreground" : "bg-primary text-primary-foreground"
-                }`}
-              >
+              <div className="flex size-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
                 <s.icon className="size-6" />
               </div>
-              {s.highlight && (
-                <span className="mt-4 inline-flex w-fit items-center rounded-full bg-accent px-2.5 py-0.5 text-xs font-semibold text-accent-foreground">
-                  Our differentiator
-                </span>
-              )}
               <h3 className="mt-4 font-display text-xl font-bold text-foreground">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
               <ul className="mt-5 space-y-2">

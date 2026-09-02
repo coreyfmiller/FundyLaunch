@@ -137,7 +137,7 @@ export default function PrivacyPage() {
                 Intellectual Property
               </h2>
               <p className="mt-3">
-                All content on this website—including text, graphics, logos, and design—is the
+                All content on this website, including text, graphics, logos, and design, is the
                 property of Fundy Launch unless otherwise stated. You may not reproduce,
                 distribute, or create derivative works from our website content without written
                 permission.

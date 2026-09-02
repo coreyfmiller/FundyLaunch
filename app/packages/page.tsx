@@ -28,7 +28,7 @@ const packages = [
     pricePrefix: "starting at",
     priceNote: "/month",
     description:
-      "Your complete customer acquisition system. We handle the website, SEO, AI search, content, and AI assistants — so you stay booked while we bring in the work.",
+      "Your complete customer acquisition system. We handle the website, SEO, AI search, content, and AI assistants, so you stay booked while we bring in the work.",
     features: [
       "Everything in the Website package, included",
       "Local SEO so you get found across Google and Maps",
@@ -194,7 +194,7 @@ export default function PackagesPage() {
               Not sure which is right for you?
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Start with a free audit — we&apos;ll review your current setup and recommend the
+              Start with a free audit, we&apos;ll review your current setup and recommend the
               best path forward. No pressure, no commitment.
             </p>
             <CtaLink href="/contact" size="lg" className="mt-5">

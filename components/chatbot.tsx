@@ -102,7 +102,7 @@ export function Chatbot() {
                                 <div>
                                     <p className="mb-1 font-medium text-foreground">Hey there! 👋</p>
                                     <p>Got questions about websites, SEO, or AI search?</p>
-                                    <p>Ask away — no pressure.</p>
+                                    <p>Ask away, no pressure.</p>
                                 </div>
                             </div>
                         )}

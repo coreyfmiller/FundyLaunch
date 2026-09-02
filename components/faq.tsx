@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "How long does it take to see results?",
     answer:
-      "Most clients see measurable improvements within 30–60 days. Website builds typically launch in 2–4 weeks. SEO and AI optimization are ongoing—you'll see early wins quickly, with compounding growth over 3–6 months.",
+      "Most clients see measurable improvements within 30–60 days. Website builds typically launch in 2–4 weeks. SEO and AI optimization are ongoing, you'll see early wins quickly, with compounding growth over 3–6 months.",
   },
   {
     question: "Do I own my website?",
@@ -22,12 +22,12 @@ const faqs = [
   {
     question: "What's the contract length?",
     answer:
-      "Website projects are one-time with a clear scope. The Local Growth Program is month-to-month after an initial 3-month commitment—we earn your business every month, no long-term lock-ins.",
+      "Website projects are one-time with a clear scope. The Local Growth Program is month-to-month after an initial 3-month commitment, we earn your business every month, no long-term lock-ins.",
   },
   {
     question: "How is this different from other agencies?",
     answer:
-      "Most agencies build you a website and disappear. We focus on local businesses specifically, we optimize for AI search (not just Google), and our Growth Program is a complete customer acquisition system—not just a pretty site collecting dust.",
+      "Most agencies build you a website and disappear. We focus on local businesses specifically, we optimize for AI search (not just Google), and our Growth Program is a complete customer acquisition system, not just a pretty site collecting dust.",
   },
   {
     question: "What does AI search optimization actually mean?",
@@ -37,12 +37,12 @@ const faqs = [
   {
     question: "Do you work with businesses outside Atlantic Canada?",
     answer:
-      "Our specialty is Atlantic Canada because we understand the local market deeply. That said, if you're a service-based business elsewhere in Canada and our approach resonates, reach out—we're happy to chat.",
+      "Our specialty is Atlantic Canada because we understand the local market deeply. That said, if you're a service-based business elsewhere in Canada and our approach resonates, reach out, we're happy to chat.",
   },
   {
     question: "What do I need to get started?",
     answer:
-      "Just fill out our free audit form or contact page. We'll research your business, your competitors, and your market—then come back to you with a clear plan. No prep work needed on your end.",
+      "Just fill out our free audit form or contact page. We'll research your business, your competitors, and your market, then come back to you with a clear plan. No prep work needed on your end.",
   },
 ]
 

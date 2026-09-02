@@ -110,7 +110,7 @@ export default function ContactPage() {
                       <CheckCircle2 className="size-8 text-accent" />
                     </span>
                     <h3 className="mt-5 font-display text-2xl font-bold text-foreground">
-                      Thanks — we&apos;re on it!
+                      Thanks, we&apos;re on it!
                     </h3>
                     <p className="mt-3 max-w-md text-muted-foreground">
                       We&apos;ll review your info and get back to you within one business day. In

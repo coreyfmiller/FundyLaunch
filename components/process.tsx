@@ -2,7 +2,7 @@ const steps = [
   {
     number: "01",
     title: "Free Audit",
-    text: "We review your website, Google presence, and how you show up in AI search—no cost, no pressure.",
+    text: "We review your website, Google presence, and how you show up in AI search. No cost, no pressure.",
   },
   {
     number: "02",
@@ -12,7 +12,7 @@ const steps = [
   {
     number: "03",
     title: "Build or Improve the Website",
-    text: "Fast, mobile-first, conversion-focused—built to turn visitors into paying customers.",
+    text: "Fast, mobile-first, conversion-focused, built to turn visitors into paying customers.",
   },
   {
     number: "04",

@@ -70,8 +70,7 @@ export default function NonprofitsPage() {
               </h1>
               <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
                 Your mission matters more than your budget. We donate our time and expertise to
-                build professional websites for non-profit organizations across Atlantic Canada —
-                completely free.
+                build professional websites for non-profit organizations across Atlantic Canada, completely free.
               </p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <CtaLink href="#apply" size="lg">
@@ -263,7 +262,7 @@ function NonprofitForm() {
         })
 
         form.reset()
-        form.innerHTML = `<div class="flex flex-col items-center py-10 text-center"><p class="font-display text-xl font-bold text-foreground">Thanks — we'll be in touch!</p><p class="mt-2 text-sm text-muted-foreground">We review every application and respond within one week.</p></div>`
+        form.innerHTML = `<div class="flex flex-col items-center py-10 text-center"><p class="font-display text-xl font-bold text-foreground">Thanks, we'll be in touch!</p><p class="mt-2 text-sm text-muted-foreground">We review every application and respond within one week.</p></div>`
       }}
       className="space-y-5"
     >  <div className="grid gap-4 sm:grid-cols-2">

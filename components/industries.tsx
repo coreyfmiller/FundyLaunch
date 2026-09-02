@@ -38,7 +38,7 @@ export function Industries() {
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
             We focus on businesses where one new customer is worth hundreds or thousands of
-            dollars—so every lead we send you counts.
+            dollars, so every lead we send you counts.
           </p>
         </div>
 
