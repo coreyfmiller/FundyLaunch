@@ -114,7 +114,7 @@ const youthProjects = [
 
 export function RecentWork() {
   return (
-    <section id="work" className="bg-background py-16 md:py-24">
+    <section id="work" className="scroll-mt-28 bg-background py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">

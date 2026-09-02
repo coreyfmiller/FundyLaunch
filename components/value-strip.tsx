@@ -1,10 +1,10 @@
-import { PhoneCall, Search, TrendingUp, Users } from "lucide-react"
+import { Bot, PhoneCall, Search, TrendingUp } from "lucide-react"
 
 const stats = [
   { icon: TrendingUp, value: "Websites built to rank", label: "not just to look good" },
   { icon: PhoneCall, value: "More calls & leads", label: "from ready-to-buy customers" },
   { icon: Search, value: "Google, Maps & AI", label: "visibility where it matters" },
-  { icon: Users, value: "Local & transparent", label: "reporting every month" },
+  { icon: Bot, value: "AI chat & phone assistants", label: "that answer customers 24/7" },
 ]
 
 export function ValueStrip() {

@@ -29,7 +29,7 @@ const industries = [
 
 export function Industries() {
   return (
-    <section id="industries" className="bg-secondary/50 py-16 md:py-24">
+    <section id="industries" className="scroll-mt-28 bg-secondary/50 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">Who we help</p>

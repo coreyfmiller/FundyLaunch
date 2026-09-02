@@ -24,7 +24,7 @@ const features = [
 
 export function AiOptimization() {
   return (
-    <section id="ai" className="bg-primary py-16 text-primary-foreground md:py-24">
+    <section id="ai" className="scroll-mt-28 bg-primary py-16 text-primary-foreground md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 md:px-6 lg:grid-cols-2">
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white shadow-xl">

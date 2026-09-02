@@ -17,8 +17,6 @@ interface AuditLog {
 let dailyAudits: AuditLog[] = []
 let lastResetDate = new Date().toDateString()
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 function resetDailyIfNeeded() {
     const today = new Date().toDateString()
     if (today !== lastResetDate) {
@@ -28,6 +26,14 @@ function resetDailyIfNeeded() {
 }
 
 async function sendAlert(audits: AuditLog[]) {
+    // Instantiate lazily (not at module load) so a missing key can't crash the build.
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+        console.warn("[audit] RESEND_API_KEY not set — skipping alert email")
+        return
+    }
+    const resend = new Resend(apiKey)
+
     const a = audits[audits.length - 1]
     const avg = a.scores ? Math.round((a.scores.seo + a.scores.aeo + a.scores.geo) / 3) : null
     const seo = a.scores?.seo ?? "N/A"

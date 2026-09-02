@@ -21,14 +21,14 @@ const steps = [
   },
   {
     number: "05",
-    title: "Measure Results Every Month",
-    text: "Transparent reporting so you always know what's working and where your growth is coming from.",
+    title: "Capture Every Lead with AI",
+    text: "AI chat and phone assistants answer your customers 24/7, so no call or inquiry slips through when you're on the job.",
   },
 ]
 
 export function Process() {
   return (
-    <section id="process" className="bg-secondary/50 py-16 md:py-24">
+    <section id="process" className="scroll-mt-28 bg-secondary/50 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">How it works</p>

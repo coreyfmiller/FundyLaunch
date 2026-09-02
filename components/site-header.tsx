@@ -6,11 +6,13 @@ import { Menu, X } from "lucide-react"
 import { CtaLink } from "@/components/cta-link"
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "AI Search", href: "#ai" },
-  { label: "Blog", href: "/blog" },
+  // Absolute anchors (/#...) so these work from any page, not just the home page.
+  { label: "Services", href: "/#services" },
+  { label: "Work", href: "/#work" },
+  { label: "AI Search", href: "/#ai" },
+  { label: "Packages", href: "/packages" },
   { label: "Contact", href: "/contact" },
+  { label: "Blog", href: "/blog" },
 ]
 
 export function SiteHeader() {

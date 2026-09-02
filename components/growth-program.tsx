@@ -14,7 +14,7 @@ const included = [
 
 export function GrowthProgram() {
   return (
-    <section id="growth" className="bg-background py-16 md:py-24">
+    <section id="growth" className="scroll-mt-28 bg-background py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
           <div className="grid lg:grid-cols-2">

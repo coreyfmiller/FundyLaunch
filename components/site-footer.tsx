@@ -3,19 +3,20 @@ import Image from "next/image"
 const cols = [
   {
     title: "Services",
+    // Absolute anchors (/#...) so these work from any page, not just the home page.
     links: [
-      { label: "Website Design", href: "#services" },
-      { label: "Local SEO", href: "#services" },
-      { label: "AI Optimization", href: "#ai" },
-      { label: "Local Growth Program", href: "#growth" },
-      { label: "Our Work", href: "#work" },
+      { label: "Website Design", href: "/#services" },
+      { label: "Local SEO", href: "/#services" },
+      { label: "AI Optimization", href: "/#ai" },
+      { label: "Local Growth Program", href: "/#growth" },
+      { label: "Our Work", href: "/#work" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "Our Process", href: "#process" },
-      { label: "Who We Help", href: "#industries" },
+      { label: "Our Process", href: "/#process" },
+      { label: "Who We Help", href: "/#industries" },
       { label: "Blog", href: "/blog" },
       { label: "Packages", href: "/packages" },
       { label: "Free Demo", href: "/contact" },

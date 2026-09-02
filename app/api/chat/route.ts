@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
 
     const result = streamText({
-        model: google('gemini-2.5-flash'),
+        model: google('gemini-flash-latest'),
         system: `You are the Fundy Launch assistant — a friendly, knowledgeable digital marketing consultant for local businesses in Atlantic Canada.
 
 Fundy Launch helps contractors and local service businesses get found on Google, Google Maps, and AI-powered search (ChatGPT, Gemini, Perplexity). We build high-performing websites and run local SEO and AI optimization.

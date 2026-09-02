@@ -104,7 +104,10 @@ export default function PrivacyPage() {
           {/* Terms of Service */}
           <hr className="my-14 border-border" />
 
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h1
+            id="terms"
+            className="scroll-mt-28 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl"
+          >
             Terms of Service
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">Last updated: July 2026</p>
