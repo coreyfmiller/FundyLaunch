@@ -36,6 +36,7 @@ const services = [
       "ChatGPT, Gemini, Claude",
       "Perplexity & voice search",
     ],
+    highlight: true,
   },
   {
     icon: Bot,
@@ -66,16 +67,34 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <div
               key={s.title}
-              className="flex flex-col rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+              className={`flex h-full flex-col rounded-2xl border p-6 transition-shadow hover:shadow-lg ${
+                s.highlight
+                  ? "border-accent bg-accent/5 shadow-md shadow-accent/10"
+                  : "border-border bg-card"
+              }`}
             >
-              <div className="flex size-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+              <div
+                className={`flex size-12 items-center justify-center rounded-xl ${
+                  s.highlight ? "bg-accent text-accent-foreground" : "bg-primary text-primary-foreground"
+                }`}
+              >
                 <s.icon className="size-6" />
               </div>
-              <h3 className="mt-4 font-display text-xl font-bold text-foreground">{s.title}</h3>
+
+              {/* Fixed-height badge slot on every card so highlighted and non-highlighted cards stay identical in size */}
+              <div className="mt-4 h-5">
+                {s.highlight && (
+                  <span className="inline-flex items-center rounded-full bg-accent px-2.5 py-0.5 text-xs font-semibold text-accent-foreground">
+                    What sets us apart
+                  </span>
+                )}
+              </div>
+
+              <h3 className="mt-2 font-display text-xl font-bold text-foreground">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
               <ul className="mt-5 space-y-2">
                 {s.points.map((p) => (
