@@ -5,64 +5,39 @@ import { CtaLink } from "@/components/cta-link"
 
 const packages = [
   {
-    name: "Website Launch",
-    tagline: "Get online right",
-    price: "3,500",
+    name: "Website",
+    tagline: "Get online, done right",
+    price: "3,000",
+    pricePrefix: "starting at",
     priceNote: "one-time",
     description:
-      "A fast, professional website built to convert — plus the foundation to start ranking locally.",
+      "A fast, professional website built to rank on Google and turn visitors into calls. The foundation everything else builds on.",
     features: [
-      "Custom mobile-first website (up to 5 pages)",
-      "Professional branding & design",
-      "On-page SEO setup",
-      "Google Business Profile setup",
-      "30+ local citation submissions",
-      "Review generation system (QR code + follow-up template)",
-      "1 round of revisions",
-      "Launched in 2–3 weeks",
+      "Custom, mobile-first design that reflects your brand",
+      "Built to rank locally and convert visitors into leads",
+      "Google Business Profile set up so you show up on Maps",
+      "Ready to launch in weeks, not months",
     ],
     cta: "Get Started",
     highlighted: false,
   },
   {
-    name: "Growth Starter",
-    tagline: "Get found locally",
-    price: "5,500",
-    priceNote: "one-time + optional monthly",
-    description:
-      "Everything in Website Launch, plus aggressive local SEO to start generating calls from Google and Maps.",
-    features: [
-      "Everything in Website Launch",
-      "Local SEO keyword strategy",
-      "Service area landing pages",
-      "Google Business Profile optimization",
-      "Backlink building (10+ quality links)",
-      "Technical SEO audit & fixes",
-      "Competitor analysis report",
-      "Optional: ongoing SEO at $1,000/mo",
-    ],
-    cta: "Most Popular",
-    highlighted: true,
-  },
-  {
-    name: "Full Growth Partner",
-    tagline: "Dominate your market",
+    name: "Growth Partner",
+    tagline: "We become your marketing team",
     price: "1,500",
-    priceNote: "/month (3-month minimum)",
+    pricePrefix: "starting at",
+    priceNote: "/month",
     description:
-      "Your complete customer acquisition system. We handle everything — website, SEO, AI, content, and reporting — so you focus on running your business.",
+      "Your complete customer acquisition system. We handle the website, SEO, AI search, content, and AI assistants — so you stay booked while we bring in the work.",
     features: [
-      "Custom website (included in first month)",
-      "Full local SEO management",
-      "AI search optimization (ChatGPT, Gemini, Perplexity)",
-      "Google Business Profile management",
-      "Monthly blog content (2 posts)",
-      "Backlink building & outreach",
-      "Review monitoring & generation",
-      "Monthly performance report & strategy call",
+      "Everything in the Website package, included",
+      "Local SEO so you get found across Google and Maps",
+      "AI search visibility (ChatGPT, Gemini, Perplexity)",
+      "AI chat & phone assistants that answer customers 24/7",
+      "Ongoing content that compounds traffic month over month",
     ],
-    cta: "Let's Talk",
-    highlighted: false,
+    cta: "Book a Free Call",
+    highlighted: true,
   },
 ]
 
@@ -77,15 +52,15 @@ export default function PackagesPage() {
               Packages
             </p>
             <h1 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight text-foreground md:text-5xl">
-              Simple pricing, serious results
+              Two ways to work together
             </h1>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Every business is different — these are starting points. We&apos;ll build a plan
-              around your goals on a quick discovery call.
+              Need a website, or a team to grow your business? Start with either. Every job is
+              different, so we scope the exact plan and price with you on a free call.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto mt-14 grid max-w-4xl gap-6 md:grid-cols-2">
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
@@ -104,6 +79,11 @@ export default function PackagesPage() {
                 <p className="mt-1 text-sm text-muted-foreground">{pkg.tagline}</p>
 
                 <div className="mt-5">
+                  {pkg.pricePrefix && (
+                    <span className="block text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                      {pkg.pricePrefix}
+                    </span>
+                  )}
                   <span className="font-display text-4xl font-extrabold text-foreground">
                     ${pkg.price}
                   </span>
