@@ -1,4 +1,4 @@
-import { Gauge, MapPin, Sparkles } from "lucide-react"
+import { Bot, Gauge, MapPin, Sparkles } from "lucide-react"
 
 const services = [
   {
@@ -38,6 +38,18 @@ const services = [
     ],
     highlight: true,
   },
+  {
+    icon: Bot,
+    title: "AI Assistants",
+    description:
+      "Never miss a lead again. AI chat and phone assistants answer your customers around the clock, book jobs, and capture details while you work.",
+    points: [
+      "24/7 website chat assistant",
+      "AI phone answering",
+      "Books jobs & captures leads",
+      "Answers common questions",
+    ],
+  },
 ]
 
 export function Services() {
@@ -55,7 +67,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <div
               key={s.title}

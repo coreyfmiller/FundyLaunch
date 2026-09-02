@@ -5,10 +5,10 @@ const included = [
   "Website updates & maintenance",
   "Local SEO",
   "AI search optimization",
+  "AI chat & phone assistants",
   "Google Business Profile management",
   "Blog articles",
   "Review management",
-  "Performance reports",
   "Ongoing strategy & support",
 ]
 
@@ -23,18 +23,18 @@ export function GrowthProgram() {
                 Recurring growth, not one-off projects
               </span>
               <h2 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
-                The Local Growth Program
+                Need more than a website? Become a Growth Partner
               </h2>
               <p className="mt-4 text-pretty text-lg leading-relaxed text-primary-foreground/80">
-                Most agencies stop at websites. We become your growth partner—a complete customer
-                acquisition system that keeps working month after month.
+                Most agencies stop at the website. We become your marketing team—a complete customer
+                acquisition system that keeps bringing in work while you're on the job.
               </p>
               <p className="mt-6 text-sm text-primary-foreground/60">
-                We start with businesses where one new customer is worth hundreds or thousands of
-                dollars—because that's where marketing delivers real ROI.
+                Best for businesses where one new customer is worth hundreds or thousands of
+                dollars—that's where this delivers real ROI.
               </p>
-              <CtaLink href="/contact" size="lg" className="mt-8">
-                Get your free demo
+              <CtaLink href="/packages" size="lg" className="mt-8">
+                See how it works
                 <ArrowRight />
               </CtaLink>
             </div>
