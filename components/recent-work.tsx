@@ -85,7 +85,16 @@ const industryShowcase = [
   },
 ]
 
-const youthProjects = [
+const communityProjects = [
+  {
+    title: "Fundy Female Hockey Association",
+    description:
+      "A bold website for the Fundy region's first all-female minor hockey association, home of the Fundy Kraken. Serving players from St. Stephen to Sussex, growing the female game one player at a time.",
+    image: "/fundykraken.png",
+    alt: "Fundy Female Hockey Association, home of the Fundy Kraken, all-female minor hockey in Zone 4 New Brunswick",
+    link: "https://fundykraken.ca",
+    logo: true,
+  },
   {
     title: "KV Adventure Club",
     description:
@@ -214,16 +223,16 @@ export function RecentWork() {
               Community
             </span>
             <h2 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Young Entrepreneur Initiative
+              Giving Back to Our Community
             </h2>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Free web design for young entrepreneurs in our community. Because every founder
-              deserves a real online presence.
+              Free web design for young entrepreneurs, non-profits, and local organizations in our
+              community. Because everyone deserves a real online presence.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {youthProjects.map((project) => (
+            {communityProjects.map((project) => (
               <a
                 key={project.title}
                 href={project.link}
@@ -231,13 +240,21 @@ export function RecentWork() {
                 rel="noopener noreferrer"
                 className="group flex flex-col overflow-hidden rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.03] transition-shadow hover:shadow-lg"
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <div
+                  className={`relative aspect-[4/3] w-full overflow-hidden ${
+                    project.logo ? "flex items-center justify-center bg-[#0d1b2a] p-6" : ""
+                  }`}
+                >
                   <Image
                     src={project.image}
                     alt={project.alt}
                     width={800}
                     height={600}
-                    className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={
+                      project.logo
+                        ? "max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                        : "size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    }
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -257,7 +274,7 @@ export function RecentWork() {
           </div>
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
-            Know a young entrepreneur or non-profit in the Greater Saint John area who needs a website?{" "}
+            Know a young entrepreneur, non-profit, or community organization in the Greater Saint John area who needs a website?{" "}
             <a href="/contact" className="font-semibold text-emerald-400 hover:text-emerald-300">
               Get in touch
             </a>{" "}, we&apos;d love to help.
