@@ -39,6 +39,8 @@ export async function POST(req: NextRequest) {
           .map((line: string) => (line.trim() ? `<p>${line}</p>` : ""))
           .join("")
 
+        const unsubMailto = `mailto:unsubscribe@fundylaunch.com?subject=${encodeURIComponent("Unsubscribe")}&body=${encodeURIComponent(`Please remove ${p.email} from your list.`)}`
+
         const { data, error } = await resend.emails.send({
           from: "Corey at FundyLaunch <hello@fundylaunch.com>",
           to: p.email,
@@ -47,11 +49,16 @@ export async function POST(req: NextRequest) {
             ${htmlBody}
             <br/>
             <p style="color: #666; font-size: 12px;">
-              This is a one-time outreach from FundyLaunch. We build websites for trades businesses in Atlantic Canada.
-              If you'd prefer not to hear from us, just reply and let us know.
+              This is a one-time outreach from FundyLaunch (Fundy Logic Inc.). We build websites for trades businesses in Atlantic Canada.<br/>
+              Fundy Logic Inc., 18 Sunrise Drive, Quispamsis, NB E2E 4V1, Canada.<br/>
+              To stop receiving emails from us, reply with "unsubscribe" or <a href="${unsubMailto}">click here to unsubscribe</a>.
             </p>
           `,
           replyTo: "coreyfmiller@gmail.com",
+          headers: {
+            "List-Unsubscribe": `<${unsubMailto}>`,
+            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+          },
           tags: [
             { name: "campaign", value: "outreach" },
             { name: "trade", value: p.trade },
