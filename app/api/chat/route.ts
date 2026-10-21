@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { streamText, toTextStream } from 'ai';
+import { streamText } from 'ai';
 
 export const maxDuration = 30;
 
@@ -48,7 +48,10 @@ IMPORTANT:
         messages,
     });
 
-    return new Response(toTextStream(result.stream), {
+    // `toTextStream(result.stream)` was a type error: the helper takes a `{ stream }`
+    // wrapper, not the stream itself. The result object already knows how to render
+    // itself as a plain-text response, so use that rather than re-deriving it.
+    return result.toTextStreamResponse({
         headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
 }

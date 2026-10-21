@@ -75,6 +75,18 @@ async function sendUserResults(email: string, businessName: string, url: string,
     const scores = data?.scores
     if (!scores) return
 
+    // This referenced a bare `resend` that only ever existed as a local inside
+    // `sendAlert`, so every call threw a ReferenceError straight into the
+    // `.catch(console.error)` at the call site: the visitor who asked for their audit
+    // results never received them, and nothing surfaced the failure. The internal
+    // alert email kept working, which is why it looked fine from this end.
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+        console.warn("[audit] RESEND_API_KEY not set, skipping the visitor's results email")
+        return
+    }
+    const resend = new Resend(apiKey)
+
     const avg = Math.round((scores.seo + scores.aeo + scores.geo) / 3)
     const totalIssues = (data.recommendations || []).length
     const bottomLine = data.expertAnalysis?.bottomLine || ""

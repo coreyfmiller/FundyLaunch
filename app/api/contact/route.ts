@@ -84,12 +84,26 @@ export async function POST(request: Request) {
   }
 }
 
+// Mirror the lead into the Quadropus ops command center. Best-effort by design: the
+// email above is the source of truth and this must never fail the contact form.
+//
+// Best-effort does not mean silent. This used to `return` with no trace when the env
+// wasn't set, so the ops dashboard sat empty for weeks and looked like "no leads"
+// rather than "never configured". Every exit path now says what happened.
 async function forwardLeadToOps(lead: Record<string, unknown>) {
   const endpoint = process.env.OPS_LEADS_URL
   const token = process.env.LEADS_INGEST_TOKEN
-  if (!endpoint || !token) return
+  if (!endpoint || !token) {
+    const missing = [!endpoint && "OPS_LEADS_URL", !token && "LEADS_INGEST_TOKEN"]
+      .filter(Boolean)
+      .join(", ")
+    console.warn(
+      `[contact] lead not mirrored to ops: ${missing} not set. The email was still sent.`,
+    )
+    return
+  }
   try {
-    await fetch(endpoint, {
+    const res = await fetch(endpoint, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -98,7 +112,12 @@ async function forwardLeadToOps(lead: Record<string, unknown>) {
       body: JSON.stringify(lead),
       signal: AbortSignal.timeout(5000),
     })
-  } catch {
-    // Ignore: ops forwarding is best-effort.
+    if (!res.ok) {
+      console.error(
+        `[contact] ops rejected the lead: ${res.status} ${await res.text().catch(() => "")}`,
+      )
+    }
+  } catch (e) {
+    console.error("[contact] could not reach ops to mirror the lead:", e)
   }
 }
